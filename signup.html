@@ -25,11 +25,11 @@
       crossorigin="anonymous"
     />
     <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet" />
+    <link href="css/signin.css" rel="stylesheet" />
   </head>
 
   <body class="text-center">
-    <form class="form-signin">
+    <form class="form-signin" method="POST" action="/">
       <img
         class="mb-4"
         src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"
@@ -37,33 +37,37 @@
         width="72"
         height="72"
       />
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-      <label for="inputEmail" class="sr-only">Email address</label>
+      <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
+      <label for="inputEmail" class="sr-only">First name</label>
       <input
-        type="email"
-        id="inputEmail"
-        class="form-control"
-        placeholder="Email address"
+        type="text"
+        class="form-control top"
+        placeholder="First name"
         required
         autofocus
+        name="fname"
       />
-      <label for="inputPassword" class="sr-only">Password</label>
+      <label for="inputPassword" class="sr-only">Last Name</label>
       <input
-        type="password"
-        id="inputPassword"
-        class="form-control"
-        placeholder="Password"
+        type="text"
+        class="form-control middle"
+        placeholder="Last Name"
         required
+        name="lname"
       />
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me" /> Remember me
-        </label>
-      </div>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input
+        type="text"
+        class="form-control bottom"
+        placeholder="Email address"
+        required
+        name="email"
+      />
+      <div class="checkbox mb-3"></div>
       <button class="btn btn-lg btn-primary btn-block" type="submit">
-        Sign in
+        Sign up
       </button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+      <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
     </form>
   </body>
 </html>
